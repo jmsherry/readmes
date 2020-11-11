@@ -45,3 +45,5 @@ xx    `trimStart()` - gets rid of whitespace at the start
       `[@@iterator]()` - for internal use. It allows loops to iterate over the string
 
 x.     `String.raw()` - is a 'tagged template literal' it allows you to do : ``` String.raw`C:\Development\profile\aboutme.html`; ``` without escaping the slashes
+
+** N.B. Strings are immutable, so if you need to evaluate them for order (e.g. sorting, reversing, etc.) then turn them into arrays with `split('')` and rejoin them with `[].join('')` **
